@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RAMEEZ ADIL</title>
+    <BASE href="http://splodster.github.io/splodster/">
+    <style>
+        #timezone * {
+            text-decoration: none;
+        }
+        #timezone .color-text {
+            color: #ff0000;
+        }
+        body {
+            top: 0;
+            left: 0;
+            width: 99%;
+            height: 97%;
+            position: absolute;
+            display: table
+        }
+        p {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            font-family: 'Courier New';
+        }
+        img:hover {
+            filter: blur(1px);
+        }
+        .title {
+            font-size: 30px;
+            font-family:'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<div class="center">
+</div>
+
+<body>
+    <p>
+        <span class="title">
+           this is rameez adil.
+        </span>
+        <br>
+        <a href="../splodster/images01.html"><img src="https://i.imgur.com/fgHScLx.jpeg" width="560px"></a>
+        <br>
+        <span class="image-text">I took this image, pretty proud of it.</span>
+        <br>
+        <span class="image-text">click the image to see more for more snaps</span>
+        <br>
+        <br>
+        <span id="timezone">
+            <i>
+                <span class="color-text">it is</span>
+                <span id="time"></span>
+            </i>
+        </span>
+    </p>
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"> </script>
+    <script>
+        function updateTime() {
+            const time = luxon.DateTime.now().setZone('UTC+8').toLocaleString(luxon.DateTime.DATETIME_FULL_WITH_SECONDS);
+            document.getElementById('time').textContent = time;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+
+</html>
