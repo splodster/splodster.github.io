@@ -4,6 +4,7 @@ h1.title {
     justify-content: center;
     align-items: center;
     font-family: 'courier new';
+    color: #d4be98;
 }
 
 h2.title {
@@ -11,6 +12,7 @@ h2.title {
     display: flex;
     justify-content: center;
     font-family: 'courier new';
+    color: #ddc7a1;
 }
 
 .image-container {
@@ -52,3 +54,10 @@ h2.title {
     text-align: center;
 }
 
+body {
+    background-color: #1d2021;
+}
+
+p {
+    color: #d4be98;
+}
