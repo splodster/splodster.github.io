@@ -3,7 +3,7 @@ h1.title {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'courier new';
+  font-family: "courier new";
   color: #d4be98;
 }
 
@@ -11,8 +11,14 @@ h2.title {
   height: 5vh;
   display: flex;
   justify-content: center;
-  font-family: 'courier new';
+  font-family: "courier new";
   color: #ddc7a1;
+}
+
+div.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -42,7 +48,6 @@ a {
   right: 0;
 }
 
-
 .image-container img {
   width: 100%;
   height: 100%;
@@ -54,7 +59,7 @@ a {
 }
 
 .caption {
-  font-family: 'courier new';
+  font-family: "courier new";
   font-size: 1rem;
   text-align: center;
   color: #d4be98;

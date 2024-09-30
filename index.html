@@ -1,92 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>RAMEEZ ADIL</title>
-    <BASE href="http://splodster.github.io/">
+    <base href="http://splodster.github.io/" />
     <style>
-        #timezone * {
-            text-decoration: none;
-        }
+      #timezone * {
+        text-decoration: none;
+      }
 
-        #timezone .color-text {
-            color: #d8a657;
-        }
+      #timezone .color-text {
+        color: #d8a657;
+      }
 
-        body {
-            top: 0;
-            left: 0;
-            width: 99%;
-            height: 97%;
-            position: absolute;
-            display: table;
-            background-color: #1d2021;
-        }
+      body {
+        top: 0;
+        left: 0;
+        width: 99%;
+        height: 97%;
+        position: absolute;
+        display: table;
+        background-color: #1d2021;
+      }
 
-        p {
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-            font-family: 'Courier New';
-            color: #d4be98;
-        }
+      p {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-family: "Courier New";
+        color: #d4be98;
+      }
 
-        a {
-            color: #7daea3;
-            text-decoration: underline;
-        }
+      a {
+        color: #7daea3;
+        text-decoration: underline;
+      }
 
-        img:hover {
-            filter: blur(1px);
-        }
+      img:hover {
+        filter: blur(1px);
+      }
 
-        .title {
-            font-size: 30px;
-            font-family: 'Courier New', Courier, monospace;
-        }
+      .title {
+        font-size: 30px;
+        font-family: "Courier New", Courier, monospace;
+      }
     </style>
-</head>
+  </head>
 
-<div class="center">
-</div>
+  <div class="center"></div>
 
-<body>
+  <body>
     <p>
-        <span class="title">
-            this is rameez adil.
-        </span>
-        <br>
-        <a href="imagetoc.html"><img src="https://i.imgur.com/fgHScLx.jpeg" width="560px"></a>
-        <br>
-        <span class="image-text">i took this image</span>
-        <br>
-        <span class="image-text">click the image to see more of my work</span>
-        <br>
-        <br>
-        <span id="timezone">
-            <i>
-                <span class="color-text">it is</span>
-                <span id="time"></span>
-            </i>
-        </span>
-        <br>
-        <br>
-        <span>
-            <a href="about.html">about</a> ///
-            <a href="contact.html">contact</a>
-        </span>
+      <span class="title"> this is rameez adil. </span>
+      <br />
+      <a href="imagetoc.html"
+        ><img src="https://i.imgur.com/fgHScLx.jpeg" width="560px"
+      /></a>
+      <br />
+      <span class="image-text">i took this image</span>
+      <br />
+      <span class="image-text">click the image to see more of my work</span>
+      <br />
+      <br />
+      <span id="timezone">
+        <i>
+          <span class="color-text">it is</span>
+          <span id="time"></span>
+        </i>
+      </span>
+      <br />
+      <br />
+      <span>
+        <a href="about.html">about</a> ///
+        <a href="calc.html">calculator</a>
+      </span>
     </p>
-    <script src="https://moment.github.io/luxon/global/luxon.min.js"> </script>
+    <script src="https://moment.github.io/luxon/global/luxon.min.js"></script>
     <script>
-        function updateTime() {
-            const time = luxon.DateTime.now().setZone('UTC+8').toLocaleString(luxon.DateTime.DATETIME_FULL_WITH_SECONDS);
-            document.getElementById('time').textContent = time;
-        }
-        updateTime();
-        setInterval(updateTime, 1000);
+      function updateTime() {
+        const time = luxon.DateTime.now()
+          .setZone("UTC+8")
+          .toLocaleString(luxon.DateTime.DATETIME_FULL_WITH_SECONDS);
+        document.getElementById("time").textContent = time;
+      }
+      updateTime();
+      setInterval(updateTime, 1000);
     </script>
-</body>
-
+  </body>
 </html>
